@@ -9,6 +9,8 @@ connection = pymysql.connect(host=host,
                                  user=user,
                                  password=password,
                                  database=db,
+                                 port=3306,
+                                 charset='utf8mb4',
                                  cursorclass=pymysql.cursors.DictCursor)
 print("Successfully connected to the database.")
 
